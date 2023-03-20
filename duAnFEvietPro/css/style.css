@@ -1,0 +1,214 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+#header {
+    background-color: #222;
+
+}
+
+#logo,
+#search,
+#cart {
+    height: 60px;
+}
+
+
+
+#search input {
+    width: 275px;
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 3px 0 0 3px;
+    font-size: 13px;
+}
+
+#search button {
+    /* width: ; */
+    height: 30px;
+    line-height: 30px;
+    border: none;
+    border-radius: 0 3px 3px 0;
+    font-size: 13px;
+    background-color: #eb1f27;
+    color: #fff;
+    padding: 0 15px;
+
+}
+
+#search input,
+#search button {
+    margin-top: 15px;
+
+}
+
+#cart {
+    text-align: right;
+    padding-top: 15px;
+}
+
+#cart a,
+#cart span {
+    color: #fff;
+    text-transform: capitalize;
+}
+
+#cart span {
+    /* inline block để tạo khối cho thẻ inline */
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background-color: #eb1f27;
+    border-radius: 100%;
+}
+
+
+#main{
+    background-color: #e7ecf4;
+    padding-bottom: 30px;
+}
+
+/* 2 Main */
+#menu {
+}
+#menu ul{
+    overflow: hidden;
+    background-color: #eb1f27;
+    padding: 0;
+}
+
+#menu .menu-item{
+    /* width: 60px; */
+    height: 40px;
+    line-height: 40px;
+    padding: 0 15px;
+    list-style: none;
+    float: left;
+    font-size: 13px;
+    border-right: 1px solid #b71015;
+    text-transform: capitalize;
+}
+
+#menu .menu-item a{
+    text-decoration: none;
+    color: #fff;
+}
+
+#menu .menu-item:hover{
+    cursor: pointer;
+    background-color: #b71015;
+}
+
+/* Side-bar */
+.banner-item{
+    margin-bottom: 10px;
+}
+
+.products h3{
+    font-family: 18px;
+    margin-top: 15px;
+}
+.product-item {
+    padding: 5px;
+}
+
+.product-item-inner{
+    background-color: #fff;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.product-item-inner img{
+    width: 125px;
+    height: auto;
+}
+
+.product-item-inner h4 a{
+    font-size: 14px;
+    color: #333;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.product-item-inner p {
+    text-transform: capitalize;
+}
+.product-item-inner p span{
+    font-weight: bold;
+    color: #eb1f27;
+}
+.product-list{
+    margin-right: -5px;
+    margin-left: -5px;
+}
+
+
+/* Footer */
+#logo-f,
+#address,
+#service,
+#hotline{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+#footer-t .heading-footer a{
+    color: #333;
+    font-size: 18px;
+}
+
+#address h3, #service h3, #hotline h3{
+    border-bottom:1px solid #333 ;
+    padding-bottom: 10px;
+    margin-bottom: 13px;
+}
+
+#logo-f p{
+    text-align: justify;
+}
+/* footer-b */
+#footer-b{
+    background-color: #1d1e24;
+}
+#footer-b p {
+    color: #fff;
+    line-height: 40px;
+    margin:0;
+}
+@media (max-width:992px ){
+    #banner{
+        display:none ;
+    }
+}
+@media (max-width:768px){
+    #cart{
+        text-align: left;
+    }
+    #carouselExampleIndicators{
+        display: none;
+    }
+    #menu .menu-item {
+        float: none;
+        border: none;
+        border-bottom: 1px solid #ca1b21;
+    }
+    #logo h1 button{
+        background-color: #fff;
+        float: right;
+        margin-top: 10px;
+        background-color: #eb1f27;
+    }
+
+    
+
+}
+/* fix looix */
+@media (min-width:768px){
+    #menu{
+        display: block;
+    }
+}
